@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-06-03T14:35:13.809Z",
+    "end": "2018-06-03T14:35:13.854Z",
+    "duration": 45,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "e5932f8b-257f-45ea-bdfb-6184b85c42a7",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "55b46d70-498d-443b-99d8-9a1b17223cba",
+        "title": "后台接口测试",
+        "fullFile": "D:\\yideng\\code\\test-lesson\\service\\router.spec.js",
+        "file": "\\service\\router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test接口测试",
+            "fullTitle": "后台接口测试 test接口测试",
+            "timedOut": false,
+            "duration": 25,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "// 两种方式\n// 1\naxios.get(\"http://localhost:3000/test\")\n.then(function(res) {\n    expect(res.status).to.equal(200);\n    if (res.data.data == \"Hello World\") {\n        done();\n    } else {\n        done(new Error(\"结果不符合预期\"));\n    }\n}).catch(function(error) {\n    done(error);\n});\n// 2\n// request(\"http://localhost:3000/test\")\n// .expect('Content-Type', /json/)\n// .expect(200)\n// .end(function (response) {\n//     console.log(response);\n//     if (res.data === \"Hello World\") {\n//         done();\n//     } else {\n//         done(err);\n//     }\n// })",
+            "err": {},
+            "isRoot": false,
+            "uuid": "c4d0ee3d-22ec-41c5-837a-383e4d00ab14",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "c4d0ee3d-22ec-41c5-837a-383e4d00ab14"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 25,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
